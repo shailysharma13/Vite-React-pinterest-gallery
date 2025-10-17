@@ -44,4 +44,6 @@ A responsive Pinterest-style image gallery built with Vite + React + Tailwind CS
 1. Clone repo:
    ```bash
    git clone https://github.com/shailysharma13/Vite-React-pinterest-gallery.git
-   cd pinterest-gallery
+   cd Vite-React-pinterest-gallery
+   npm i 
+   "npm run dev" to run the project
