@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { fetchPhotosPage } from "../hooks/useUnsplash";
 import ImageCard from "./ImageCard";
@@ -154,7 +154,7 @@ export default function Gallery() {
       )}
 
       {!hasNextPage && !isFetchingNextPage && (
-        <div className="text-center text-sm text-gray-500 py-6">
+        <div className="text-center text-sm text-brandGray0 py-6">
           No more images.
         </div>
       )}

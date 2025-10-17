@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function ImageCard({ photo, onClick }) {
   const [loaded, setLoaded] = useState(false);

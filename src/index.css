@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.break-inside-avoid {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+img { transition: opacity .28s ease; }
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

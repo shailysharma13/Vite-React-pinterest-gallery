@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Modal({ photo, onClose }) {
   const containerRef = useRef(null);
@@ -66,17 +66,9 @@ return (
               {photo.alt_description}
             </p>
           )}
-          <p className="text-xs sm:text-sm text-gray-500">
+          <p className="text-xs sm:text-sm text-brandGray0">
             Photo by{" "}
-            <span className="font-medium">{photo.user?.name}</span> on{" "}
-            <a
-              href={photo.links.html}
-              target="_blank"
-              rel="noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              Unsplash
-            </a>
+            <span className="font-medium text-black">{photo.user?.name}</span> 
           </p>
         </div>
       </div>
