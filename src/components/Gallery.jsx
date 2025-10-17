@@ -3,6 +3,7 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import { fetchPhotosPage } from "../hooks/useUnsplash";
 import ImageCard from "./ImageCard";
 import Spinner from "./Spinner";
+import Modal from "./Modal";
 
 export default function Gallery() {
   const [selected, setSelected] = useState(null);
@@ -158,6 +159,7 @@ export default function Gallery() {
         </div>
       )}
 
+      <Modal photo={selected} onClose={() => setSelected(null)} />
     </section>
   );
 }

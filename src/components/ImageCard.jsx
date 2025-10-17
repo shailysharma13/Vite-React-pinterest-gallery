@@ -13,7 +13,6 @@ export default function ImageCard({ photo, onClick }) {
       />
       <div className="mt-2 text-xs text-gray-600">
         <div className="font-medium text-sm">{photo.user?.name}</div>
-        {photo.alt_description && <div className="truncate">{photo.alt_description}</div>}
       </div>
     </div>
   );
